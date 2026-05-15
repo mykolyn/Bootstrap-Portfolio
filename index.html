@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Portfolio</title>
+  <meta name="description" content="Portfolio for ML, a full-stack web developer building polished, useful apps with JavaScript, React, Node, APIs, and data-driven user experiences.">
+  <title>ML | Full-Stack Web Developer Portfolio</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -14,43 +15,18 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
-  <style type="text/css">
-    /* Necessary for full page carousel*/
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-    }
-
-    /* Carousel*/
-    .carousel,
-    .carousel-item,
-    .carousel-item.active {
-      height: 100%;
-    }
-    .carousel-inner {
-      height: 100%;
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-          background: #1C2331!important;
-      }
-  }
-
-  </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar portfolio-navbar">
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#" target="_blank">
-        <strong>ML</strong>
+      <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="ML portfolio home">
+        <span class="brand-mark mr-2">ML</span>
+        <strong>Portfolio</strong>
       </a>
 
       <!-- Collapse -->
@@ -65,31 +41,26 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="#home">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">LinkdIn</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
-      
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
-          <!-- <li class="nav-item">
-            <a href="https://www.facebook.com/" class="nav-link" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://twitter.com/" class="nav-link" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li> -->
           <li class="nav-item">
             <a href="https://github.com/mykolyn" class="nav-link border border-light rounded waves-effect waves-light"
-              target="_blank">
+              target="_blank" rel="noopener">
               <i class="fab fa-github mr-2"></i>GitHub
             </a>
           </li>
@@ -100,510 +71,209 @@
     </div>
   </nav>
   <!-- Navbar -->
-  <!-- data-ride="carousel" -->
-  <!--Carousel Wrapper-->
-  <div id="carousel-example-1z" class="carousel slide carousel-fade">
 
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-
-      <!--First slide-->
-      <div class="carousel-item active">
-        <div class="view">
-
-          <!--Video source-->
-          <video class="video-intro" autoplay loop muted>
-            <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
-          </video>
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>Hey, you found me! Looks like you're looking for a web developer</strong>
-              </h1>
-
-              <p>
-                <h4>beep boop, I'm your guy, take a look around at what I can do</h4>
-              </p>
-
-              
-            </div>
-            <!-- Content -->
-
+  <!-- Hero -->
+  <header id="home" class="hero-section view d-flex align-items-center">
+    <div class="orb orb-one" aria-hidden="true"></div>
+    <div class="orb orb-two" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-7 white-text wow fadeInUp">
+          <p class="eyebrow mb-3"><i class="fas fa-magic mr-2"></i>Full-stack developer • API tinkerer • UX-minded builder</p>
+          <h1 class="display-4 font-weight-bold mb-4">I turn rough ideas into playful, useful web apps.</h1>
+          <p class="lead mb-4">Hi, I'm ML. I build responsive JavaScript experiences that connect real APIs, clean interfaces, and practical product thinking.</p>
+          <div class="hero-actions mb-4">
+            <a href="#projects" class="btn btn-gradient btn-lg mr-md-3 mb-3">See featured work <i class="fas fa-arrow-down ml-2"></i></a>
+            <a href="#contact" class="btn btn-outline-white btn-lg mb-3">Start a conversation <i class="far fa-paper-plane ml-2"></i></a>
           </div>
-          <!-- Mask & flexbox options-->
-
+          <div class="hero-tags" aria-label="Highlighted technologies">
+            <span>React</span>
+            <span>Node</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>APIs</span>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 mt-lg-0 wow fadeInRight">
+          <div class="developer-card tilt-card" data-tilt>
+            <div class="card-topline"></div>
+            <div class="terminal-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <p class="code-line"><span>const</span> developer = {</p>
+            <p class="code-line indent">focus: <strong>'modern web apps'</strong>,</p>
+            <p class="code-line indent">style: <strong>'useful + fun'</strong>,</p>
+            <p class="code-line indent">availableFor: <strong>'teams & ideas'</strong></p>
+            <p class="code-line">};</p>
+            <div class="status-pill"><span class="pulse-dot"></span> Ready to build the next thing</div>
+          </div>
         </div>
       </div>
-      <!--/First slide-->
-
-      <!--Second slide-->
-      <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>Let me know if you need any help</strong>
-              </h1>
-
-
-              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">Contact me
-                <i class="fas fa-graduation-cap ml-2"></i>
-              </a>
-            </div>
-            <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
-        </div>
-      </div>
-      <!--/Second slide-->
-
-      <!--Third slide-->
-      <div class="carousel-item">
-        <div class="view">
-
-          <!--Video source-->
-          <video class="video-intro" autoplay loop muted>
-              <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
-          </video>
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>We can make something cool together</strong>
-              </h1>
-
-             
-
-              
-
-              <a target="_blank" href="https://www.ideo.com/journal/8-emerging-trends-that-can-help-companies-understand-their-future-consumer" class="btn btn-outline-white btn-lg">:)
-              </a>
-            </div>
-            <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
-        </div>
-      </div>
-      <!--/Third slide-->
-
     </div>
-    <!--/.Slides-->
-
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
-
-  </div>
-  <!--/.Carousel Wrapper-->
+  </header>
 
   <!--Main layout-->
   <main>
+    <section class="value-strip py-4">
+      <div class="container">
+        <div class="row text-center text-md-left">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <strong>12+</strong>
+            <span>portfolio projects shipped</span>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <strong>Full-stack</strong>
+            <span>front end, APIs, auth, and data</span>
+          </div>
+          <div class="col-md-4">
+            <strong>Product-minded</strong>
+            <span>clear copy, calls-to-action, and user flows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="container">
 
-      <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn">
-        <h2 class="my-5 h3 text-center">Team Projects</h2>
-
-        <!--Grid row-->
-        <div class="row">
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <img src="./img/weather.PNG" class="img-fluid z-depth-1-half" alt="weather forecast travel app">
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <!-- Main heading -->
-            <h3 class="h3 mb-3">Weather to Travel</h3>
-            <p>Led and developed an app to help you determine the weather along your travel route</p>
-            <p>Used google maps api and weather api</p>
-            <!-- Main heading -->
-
-            <hr>
-
-            <p>
-          
-              <strong>jquery, html, css</strong>
-            </p>
-
-            <!-- CTA -->
-            <a target="_blank" href="https://github.com/mykolyn/Weather-to-travel" class="btn btn-grey btn-md">GitHub
-              <i class="fas fa-download ml-1"></i>
-            </a>
-            <a target="_blank" href="https://mykolyn.github.io/Weather-to-travel/index.html#1" class="btn btn-grey btn-md">Live demo
-              <i class="far fa-image ml-1"></i>
-            </a>
-
-          </div>
-          <!--Grid column-->
-
+      <section id="projects" class="mt-5 wow fadeIn">
+        <div class="section-heading text-center mb-4">
+          <p class="eyebrow dark">Selected case studies</p>
+          <h2 class="h1-responsive font-weight-bold">Featured Projects</h2>
+          <p class="grey-text mx-auto">A marketable portfolio should show outcomes, tech choices, and quick paths to code or demos. These cards now highlight the problem solved, role, and stack.</p>
         </div>
-        <!--Grid row-->
 
-      </section>
-
-        <!--Section: Main info-->
-        <section class="mt-5 wow fadeIn">
-
-          <!--Grid row-->
-          <div class="row">
-  
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-  
-              <img src="./img/corona.PNG" class="img-fluid z-depth-1-half" alt="covid19 map">
-  
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-  
-              <!-- Main heading -->
-              <h3 class="h3 mb-3">Covid-19 Tracker</h3>
-              <p>Developed an app that creates a heat map of infection and death rates around the world</p>
-              <p>Used google maps api and weather api</p>
-              <!-- Main heading -->
-  
-              <hr>
-  
-              <p>
-            
-                <strong>handlebars, jquery, mysql</strong>
-              </p>
-  
-              <!-- CTA -->
-              <a target="_blank" href="https://github.com/mykolyn/quarantineparty/" class="btn btn-grey btn-md">GitHub
-                <i class="fas fa-download ml-1"></i>
-              </a>
-              <a target="_blank" href="https://enigmatic-waters-39830.herokuapp.com/" class="btn btn-grey btn-md">Live demo
-                <i class="far fa-image ml-1"></i>
-              </a>
-  
-            </div>
-            <!--Grid column-->
-  
-          </div>
-          <!--Grid row-->
-  
-        </section>
-
-          <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn">
-
-        <!--Grid row-->
-        <div class="row">
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <img src="./img/sentibot.PNG" class="img-fluid z-depth-1-half" alt="chatbot with sentiment analysis">
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <!-- Main heading -->
-            <h3 class="h3 mb-3">Sentibot</h3>
-            <p>We developed a chatbot aimed to resolve personal conflicts by guiding the user to create I-statements</p>
-            <p>Used IBM watson and passport for authentication</p>
-            <!-- Main heading -->
-
-            <hr>
-
-            <p>
-          
-              <strong>mongodb, express, react, node</strong>
-            </p>
-
-            <!-- CTA -->
-            <a target="_blank" href="https://github.com/mykolyn/sentibot" class="btn btn-grey btn-md">GitHub
-              <i class="fas fa-download ml-1"></i>
-            </a>
-            <a target="_blank" href="https://sentitalk.herokuapp.com/" class="btn btn-grey btn-md">Live demo
-              <i class="far fa-image ml-1"></i>
-            </a>
-
-          </div>
-          <!--Grid column-->
-
+        <div class="project-filters text-center mb-4" role="group" aria-label="Filter projects">
+          <button class="btn btn-sm filter-btn active" type="button" data-filter="all">All</button>
+          <button class="btn btn-sm filter-btn" type="button" data-filter="api">APIs</button>
+          <button class="btn btn-sm filter-btn" type="button" data-filter="fullstack">Full-stack</button>
+          <button class="btn btn-sm filter-btn" type="button" data-filter="react">React</button>
         </div>
-        <!--Grid row-->
 
+        <div class="row project-grid">
+          <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="api">
+            <article class="project-card h-100 tilt-card" data-tilt>
+              <div class="project-image"><img src="./img/weather.PNG" class="img-fluid" alt="Weather to Travel route forecast app screenshot"></div>
+              <div class="project-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="h4 mb-0">Weather to Travel</h3>
+                  <span class="project-badge">Lead dev</span>
+                </div>
+                <p>Route-aware weather planning app that helps travelers make safer decisions before they hit the road.</p>
+                <ul class="impact-list">
+                  <li>Integrated Google Maps and weather data into one trip-planning flow.</li>
+                  <li>Focused the experience around quick, actionable travel conditions.</li>
+                </ul>
+                <div class="tech-stack"><span>jQuery</span><span>HTML</span><span>CSS</span><span>Google Maps API</span></div>
+                <div class="project-actions">
+                  <a target="_blank" rel="noopener" href="https://github.com/mykolyn/Weather-to-travel" class="btn btn-grey btn-md">GitHub <i class="fab fa-github ml-1"></i></a>
+                  <a target="_blank" rel="noopener" href="https://mykolyn.github.io/Weather-to-travel/index.html#1" class="btn btn-gradient btn-md">Live demo <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="api fullstack">
+            <article class="project-card h-100 tilt-card" data-tilt>
+              <div class="project-image"><img src="./img/corona.PNG" class="img-fluid" alt="Covid-19 Tracker heat map screenshot"></div>
+              <div class="project-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="h4 mb-0">Covid-19 Tracker</h3>
+                  <span class="project-badge">Data viz</span>
+                </div>
+                <p>Interactive global heat map designed to make infection and fatality trends easier to scan and compare.</p>
+                <ul class="impact-list">
+                  <li>Translated public health data into map-based visual context.</li>
+                  <li>Built with server-rendered views and a database-backed app structure.</li>
+                </ul>
+                <div class="tech-stack"><span>Handlebars</span><span>jQuery</span><span>MySQL</span><span>Maps API</span></div>
+                <div class="project-actions">
+                  <a target="_blank" rel="noopener" href="https://github.com/mykolyn/quarantineparty/" class="btn btn-grey btn-md">GitHub <i class="fab fa-github ml-1"></i></a>
+                  <a target="_blank" rel="noopener" href="https://enigmatic-waters-39830.herokuapp.com/" class="btn btn-gradient btn-md">Live demo <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="react fullstack api">
+            <article class="project-card h-100 tilt-card" data-tilt>
+              <div class="project-image"><img src="./img/sentibot.PNG" class="img-fluid" alt="Sentibot chatbot with sentiment analysis screenshot"></div>
+              <div class="project-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="h4 mb-0">Sentibot</h3>
+                  <span class="project-badge">MERN</span>
+                </div>
+                <p>Conflict-resolution chatbot that guides users toward clearer I-statements and more productive conversations.</p>
+                <ul class="impact-list">
+                  <li>Connected conversational UX to sentiment analysis and authentication.</li>
+                  <li>Used a MERN stack to support a richer, app-like product experience.</li>
+                </ul>
+                <div class="tech-stack"><span>MongoDB</span><span>Express</span><span>React</span><span>Node</span><span>IBM Watson</span></div>
+                <div class="project-actions">
+                  <a target="_blank" rel="noopener" href="https://github.com/mykolyn/sentibot" class="btn btn-grey btn-md">GitHub <i class="fab fa-github ml-1"></i></a>
+                  <a target="_blank" rel="noopener" href="https://sentitalk.herokuapp.com/" class="btn btn-gradient btn-md">Live demo <i class="fas fa-external-link-alt ml-1"></i></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
-
-
-      
-
 
       <hr class="my-5">
 
-      <!--Section: Not enough-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">mini projects</h2>
-
-        <!--First row-->
-        <div class="row features-small mb-5 mt-3 wow fadeIn">
-
-          <!--First column-->
-          <div class="col-md-4">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Psychic-Game</h6>
-            
-                <p class="grey-text">Letter guessing game
-                </p>
-                    <a target="_blank" href="https://mykolyn.github.io/Psychic-Game/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Crystal game</h6>
-            
-                <p class="grey-text">Try to collect points and not go over the target score
-                </p>
-                    <a target="_blank" href="https://mykolyn.github.io/unit-4-game/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Trivia Game</h6>
-            
-                <p class="grey-text">Answer random trivia questions
-                </p>
-                    <a target="_blank" href="https://mykolyn.github.io/TriviaGame/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Giftastic</h6>
-            
-                <p class="grey-text">Get giphys related to anime
-                </p>
-                    <a target="_blank" href="https://mykolyn.github.io/giphy/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
+      <section id="skills" class="skills-panel wow fadeIn">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <p class="eyebrow dark">Why hire me?</p>
+            <h2 class="h1-responsive font-weight-bold">A clearer story sells the work.</h2>
+            <p class="grey-text">The portfolio now positions each project around impact, ownership, and capabilities—not just a list of assignments. That makes it easier for recruiters, clients, and collaborators to understand where ML can help.</p>
           </div>
-          <!--/First column-->
-
-          <!--Second column-->
-          <div class="col-md-4">
-            <!--First row-->
+          <div class="col-lg-7">
             <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+              <div class="col-md-6 mb-3">
+                <div class="skill-card"><i class="fas fa-layer-group"></i><h3>Front-end polish</h3><p>Responsive layouts, accessible structure, animations, and detail-oriented UI.</p></div>
               </div>
-              <div class="col-10">
-                <h6 class="feature-title">Train Scheduler</h6>
-            
-                <p class="grey-text">Make train schedule with firebase
-                </p>
-                    <a target="_blank" href="https://mykolyn.github.io/train-scheduler/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
+              <div class="col-md-6 mb-3">
+                <div class="skill-card"><i class="fas fa-server"></i><h3>Back-end logic</h3><p>Node, Express, authentication, databases, and API orchestration.</p></div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="skill-card"><i class="fas fa-map-marked-alt"></i><h3>API products</h3><p>Maps, weather, search, data visualization, and third-party services.</p></div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="skill-card"><i class="fas fa-comments"></i><h3>Human-first UX</h3><p>Clear user journeys, playful interactions, and copy that explains value quickly.</p></div>
               </div>
             </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">LIRI bot</h6>
-            
-                <p class="grey-text">A pseudo chat bot that does random things
-                </p>
-                    <a target="_blank" href="https://github.com/mykolyn/liri-node-app" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Bamazon</h6>
-            
-                <p class="grey-text">Pseudo amazon simulator in node.js 
-                </p>
-                    <a target="_blank" href="https://github.com/mykolyn/bamazon" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Friend Finder</h6>
-            
-                <p class="grey-text">Fill out a survey to find a friend
-                </p>
-                    <a target="_blank" href="https://find-a-friend-finder.herokuapp.com/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
           </div>
-          <!--/Second column-->
-
-          <!--Third column-->
-          <div class="col-md-4">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Burger Shack</h6>
-            
-                <p class="grey-text">Eat a pretend burger before it gets too cold at the pass!
-                </p>
-                    <a target="_blank" href="https://burger-shack-yum.herokuapp.com/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Article Scraper</h6>
-            
-                <p class="grey-text">News article scraper
-                </p>
-                    <a target="_blank" href="https://newsarticle-scraper.herokuapp.com/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Clicky Game</h6>
-            
-                <p class="grey-text">Dont click the same image twice!
-                </p>
-                    <a target="_blank" href="https://clicky-click-game.herokuapp.com/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Book Search</h6>
-            
-                <p class="grey-text">Search for books from Google API
-                </p>
-                    <a target="_blank" href="https://googlebooks-search-library.herokuapp.com/" class="btn btn-grey btn-sm">Live demo
-                <i class="far fa-image ml-1"></i></a>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-        <!--/First row-->
-
+        </div>
       </section>
-      <!--Section: Not enough-->
 
+      <section class="mt-5 wow fadeIn">
+        <div class="section-heading text-center mb-4">
+          <p class="eyebrow dark">More experiments</p>
+          <h2 class="h1-responsive font-weight-bold">Mini Projects</h2>
+        </div>
 
+        <div class="mini-projects">
+          <a target="_blank" rel="noopener" href="https://mykolyn.github.io/Psychic-Game/">Psychic Game <span>Letter guessing</span></a>
+          <a target="_blank" rel="noopener" href="https://mykolyn.github.io/unit-4-game/">Crystal Game <span>Score strategy</span></a>
+          <a target="_blank" rel="noopener" href="https://mykolyn.github.io/TriviaGame/">Trivia Game <span>Timed questions</span></a>
+          <a target="_blank" rel="noopener" href="https://mykolyn.github.io/giphy/">Giftastic <span>GIF API</span></a>
+          <a target="_blank" rel="noopener" href="https://mykolyn.github.io/train-scheduler/">Train Scheduler <span>Firebase</span></a>
+          <a target="_blank" rel="noopener" href="https://github.com/mykolyn/liri-node-app">LIRI Bot <span>Node CLI</span></a>
+          <a target="_blank" rel="noopener" href="https://github.com/mykolyn/bamazon">Bamazon <span>Node + MySQL</span></a>
+          <a target="_blank" rel="noopener" href="https://find-a-friend-finder.herokuapp.com/">Friend Finder <span>Survey matching</span></a>
+          <a target="_blank" rel="noopener" href="https://burger-shack-yum.herokuapp.com/">Burger Shack <span>CRUD app</span></a>
+          <a target="_blank" rel="noopener" href="https://newsarticle-scraper.herokuapp.com/">Article Scraper <span>Web scraping</span></a>
+          <a target="_blank" rel="noopener" href="https://clicky-click-game.herokuapp.com/">Clicky Game <span>React memory</span></a>
+          <a target="_blank" rel="noopener" href="https://googlebooks-search-library.herokuapp.com/">Book Search <span>Google Books API</span></a>
+        </div>
+      </section>
 
+      <section id="contact" class="contact-cta text-center white-text wow fadeIn">
+        <p class="eyebrow">Let's make it useful, polished, and memorable.</p>
+        <h2 class="h1-responsive font-weight-bold mb-3">Have an app idea or a role that needs a builder?</h2>
+        <p class="mb-4">I'm especially excited by projects that combine clean interfaces, APIs, data, and helpful user experiences. GitHub is the best current contact path until a real email or LinkedIn URL is added.</p>
+        <a href="https://github.com/mykolyn" target="_blank" rel="noopener" class="btn btn-outline-white btn-lg mr-md-3 mb-3"><i class="fab fa-github mr-2"></i>View GitHub</a>
+        <a href="#projects" class="btn btn-gradient btn-lg mb-3"><i class="fas fa-rocket mr-2"></i>Review the work</a>
+      </section>
 
     </div>
   </main>
@@ -611,16 +281,9 @@
 
   <!--Footer-->
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-    
-
-   
-    <!--Copyright-->
     <div class="footer-copyright py-3">
-      © 2020
+      © 2026 ML · Built with Bootstrap, a little motion, and a lot more personality.
     </div>
-    <!--/.Copyright-->
-
   </footer>
   <!--/.Footer-->
 
@@ -637,6 +300,32 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+
+    $('.filter-btn').on('click', function () {
+      var filter = $(this).data('filter');
+      $('.filter-btn').removeClass('active');
+      $(this).addClass('active');
+
+      $('.project-item').each(function () {
+        var categories = $(this).data('category');
+        var shouldShow = filter === 'all' || categories.indexOf(filter) !== -1;
+        $(this).toggleClass('is-hidden', !shouldShow);
+      });
+    });
+
+    $('[data-tilt]').on('mousemove', function (event) {
+      var card = $(this);
+      var offset = card.offset();
+      var width = card.outerWidth();
+      var height = card.outerHeight();
+      var x = event.pageX - offset.left;
+      var y = event.pageY - offset.top;
+      var rotateY = ((x / width) - 0.5) * 8;
+      var rotateX = ((y / height) - 0.5) * -8;
+      card.css('transform', 'perspective(900px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateY(-6px)');
+    }).on('mouseleave', function () {
+      $(this).css('transform', '');
+    });
   </script>
 </body>
 
